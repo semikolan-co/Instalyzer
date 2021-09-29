@@ -1,4 +1,5 @@
 # Instalyzer
+Instalyzer an approach to Improve Instagram's Searching Algorithm
 
 ## Installation
 <!-- Stting Up Local Enviroment for React Project -->
