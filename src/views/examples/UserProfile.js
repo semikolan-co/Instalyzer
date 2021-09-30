@@ -58,7 +58,7 @@ export default function ProfilePage() {
   const [Profile, setProfile] = React.useState(null)
   const {username} = useParams();
 
-  API.get('testapi',{
+  API.get('getuser',{
     username: username
   }).then((response) => {
     setProfile(response.data.profile)
