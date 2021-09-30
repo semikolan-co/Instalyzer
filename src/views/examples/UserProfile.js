@@ -1,6 +1,7 @@
 
 import React from "react";
 import classnames from "classnames";
+import {useParams} from "react-router-dom";
 // javascript plugin used to create scrollbars on windows
 import PerfectScrollbar from "perfect-scrollbar";
 // reactstrap components
@@ -30,6 +31,8 @@ import {
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import Footer from "components/Footer/Footer.js";
+import API from '../../API.js'
+import ProfileData from './dummyProfile.json'
 
 const carouselItems = [
   {
@@ -52,7 +55,15 @@ const carouselItems = [
 let ps = null;
 
 export default function ProfilePage() {
-  
+  const [Profile, setProfile] = React.useState(null)
+  const {username} = useParams();
+
+  API.get('testapi',{
+    username: username
+  }).then((response) => {
+    setProfile(response.data.profile)
+  });
+
   const [tabs, setTabs] = React.useState(1);
   React.useEffect(() => {
     if (navigator.platform.indexOf("Win") > -1) {
@@ -75,6 +86,7 @@ export default function ProfilePage() {
     };
   },[]);
   return (
+    !Profile ? "Page Loading" : 
     <>
       <ExamplesNavbar />
       <div className="wrapper">
@@ -92,13 +104,10 @@ export default function ProfilePage() {
           <Container className="align-items-center">
             <Row>
               <Col lg="6" md="6">
-                <h1 className="profile-title text-left">Mike Scheinder</h1>
+                <h1 className="profile-title text-left">{Profile.full_name}</h1>
                 <h5 className="text-on-back">01</h5>
                 <p className="profile-description">
-                  Offices parties lasting outward nothing age few resolve.
-                  Impression to discretion understood to we interested he
-                  excellence. Him remarkably use projection collecting. Going
-                  about eat forty world has round miles.
+                  {Profile.biography}
                 </p>
                 <div className="btn-wrapper profile pt-3">
                   <Button
@@ -143,11 +152,11 @@ export default function ProfilePage() {
                 <Card className="card-coin card-plain">
                   <CardHeader>
                     <img
-                      alt="..."
+                      alt="Profile Pic"
                       className="img-center img-fluid rounded-circle"
-                      src={require("assets/img/mike.jpg").default}
+                      src={Profile.profile_pic_url}
                     />
-                    <h4 className="title">Transactions</h4>
+                    <h4 className="title">{Profile.username}</h4>
                   </CardHeader>
                   <CardBody>
                     <Nav
