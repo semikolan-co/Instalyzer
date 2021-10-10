@@ -1,4 +1,5 @@
 # Instalyzer
+try test
 Instalyzer an approach to Improve Instagram's Searching Algorithm
 
 ## Installation
@@ -7,7 +8,7 @@ Before Any of the following steps, make sure you have installed the Nodejs and G
 Now you can follow the steps below to install Instalyzer.
 Fork the [Github Repository](https://github.com/semikolan-co/Instalyzer) and clone it to your local machine. You can clone using a simple command like this:
 ```shell
-git clone https://github.com/<your_username>/Instalyzer.git 
+git clone https://github.com/<eepnasibungkos>/Instalyzer.git 
 ``` 
 
 Then move to the root directory of the cloned repository. You can do this by typing the following command:
