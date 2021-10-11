@@ -1,4 +1,5 @@
 # Instalyzer
+
 Instalyzer an approach to Improve Instagram's Searching Algorithm
 
 ## Installation
@@ -29,6 +30,7 @@ Congratulations! You have successfully installed Instalyzer. Your server is runn
 Within the download you'll find the following directories and files:
 
 ```
+
 InstaLyzer
 .
 ├── CHANGELOG.md
