@@ -4,6 +4,7 @@ import classnames from "classnames";
 import {useParams} from "react-router-dom";
 // javascript plugin used to create scrollbars on windows
 import PerfectScrollbar from "perfect-scrollbar";
+
 // reactstrap components
 import {
   Button,
