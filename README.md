@@ -1,8 +1,8 @@
 # Instalyzer
-Instalyzer an approach to Improve Instagram's Searching Algorithm
+Instalyzer is an approach to Improve Instagram's Searching Algorithm.
 
 ## Installation
-<!-- Stting Up Local Enviroment for React Project -->
+<!-- Setting Up Local Enviroment for React Project -->
 Before Any of the following steps, make sure you have installed the Nodejs and Git in your system. You can simply install Nodejs from [here](https://nodejs.org/en/) and Git from [here](https://git-scm.com/downloads)
 Now you can follow the steps below to install Instalyzer.
 Fork the [Github Repository](https://github.com/semikolan-co/Instalyzer) and clone it to your local machine. You can clone using a simple command like this:
