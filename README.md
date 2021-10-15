@@ -1,4 +1,5 @@
 # Instalyzer
+Test for HactoberFest
 Instalyzer an approach to Improve Instagram's Searching Algorithm
 
 ## Installation
@@ -101,3 +102,8 @@ InstaLyzer
 
 
 Instalyzer is built using a pre-built Template [BLK Design System](https://github.com/creativetimofficial/blk-design-system-react/) by [Creative Tim](https://github.com/creativetimofficial/)
+
+You can see lots of information about instagram reports + Instagram Followers analyzer instagram Following reports Find Instagram followers Find instagram likes
+You can make instagram repost Find instagram unfollower Find nearby users View my instagram profile analyze Followers gained Followers Lost Follow / Unfollow
+Most popular your instagram media Subscriptions You can manage your subscriptions and turn off auto-renewal in your Account Settings after purchase.
+Instagram Pro
