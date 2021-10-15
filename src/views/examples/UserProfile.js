@@ -58,11 +58,18 @@ export default function ProfilePage() {
   const [Profile, setProfile] = React.useState(null)
   const {username} = useParams();
 
+  console.log("Sending Request to Backend")
   API.get('getuser',{
     username: username
   }).then((response) => {
-    setProfile(response.data.profile)
-  });
+    console.log("Received Response from Backend")
+    console.log(response.data)
+    // setProfile(response.data.profile)
+  }).catch((error) => {
+    console.log("Error in Profile Page")
+    console.log(error)
+  })
+
 
   const [tabs, setTabs] = React.useState(1);
   React.useEffect(() => {
