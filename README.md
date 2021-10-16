@@ -1,5 +1,5 @@
 # Instalyzer
-Instalyzer an approach to Improve Instagram's Searching Algorithm
+Instalyzer is an application enabling you to search through Instagram's content providing additional functionalities.
 
 ## Installation
 <!-- Stting Up Local Enviroment for React Project -->
