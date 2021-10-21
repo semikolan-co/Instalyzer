@@ -25,7 +25,7 @@ npm start
 ```
 Congratulations! You have successfully installed Instalyzer. Your server is running on localhost:3000
 
-### File Structure
+## File Structure
 Within the download you'll find the following directories and files:
 
 ```
