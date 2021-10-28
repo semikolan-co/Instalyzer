@@ -195,7 +195,7 @@ export default function IndexNavbar() {
                 target="_blank"
                 href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=bdsr-user-archive-index-navbar-upgrade-pro"
               >
-                <i className="tim-icons icon-spaceship" /> Upgrade to PRO
+                <i className="tim-icons icon-spaceship" /> SemiKolan
               </Button>
             </NavItem>
             <NavItem>
@@ -204,7 +204,7 @@ export default function IndexNavbar() {
                 color="default"
                 onClick={scrollToDownload}
               >
-                <i className="tim-icons icon-cloud-download-93" /> Download
+                <i className="tim-icons icon-github" /> Contribute
               </Button>
             </NavItem>
           </Nav>
